@@ -14,6 +14,6 @@ sqlparse
 typing_extensions
 whitenoise==6.0.0
 wincertstore==0.2
-gunicorn
-django-heroku
+
+
 

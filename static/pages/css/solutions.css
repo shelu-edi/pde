@@ -93,10 +93,16 @@
 	margin: 20px 0 0 0;
 }
 
+#design-head {
+	color: #21D4FD;
+	margin: 20px 0 0 0;
+}
+
 #data-head {
 	color: #FF3CAC;	
 	margin: 20px 0 0 0;
 }
+
 
 .solutions__info {
 	display: grid;
@@ -135,6 +141,14 @@
 	color: #EE74E1;
 }
 
+#design-info1 {
+	color: #B721FF;
+}
+
+#design-info1-2 {
+	color: #21D4FD;
+}
+
 #data-info1 {
 	color: #FF6A88;
 }
@@ -155,6 +169,10 @@
 
 #digital-info2 {
 	color: #EE74E1;
+}
+
+#design-info2 {
+	color: #21D4FD;
 }
 
 #data-info2 {
@@ -196,6 +214,19 @@
 
 #digital-info3:hover a{
 	color: #EE74E1;	
+}
+
+#design-info3 {
+	background: #21D4FD;
+}
+
+#design-info3:hover {
+	background: #fff;
+	border: 1px solid #B721FF;
+}
+
+#design-info3:hover a{
+	color: #B721FF;
 }
 
 #data-info3 {

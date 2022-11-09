@@ -43,7 +43,7 @@
 
             <!-- Network -->
 
-            <div class="solutions__head" id="network-head" data-aos="fade"> Network </div>
+            <div class="solutions__head" id="network-head" data-aos="fade"> Network Solutions</div>
             <div class="solutions__info" id="network-info">
                 <div class="info__wrapper">
                     <div class="solutions__info__desc" id="network-info-desc">
@@ -67,7 +67,7 @@
             </div>
             <div class="solutions__container" id="network" data-aos="fade">
                 {% for solution in solutions %}
-                    {% if solution.solution_category == 'Network' %}
+                    {% if solution.solution_category == 'Network Solutions' %}
                     <div class="solutions__wrapper">
                         <div class="solutions__card">                            
                             <div class="div__1">
@@ -135,6 +135,52 @@
                 {% endfor %}
             </div>
 
+            <!-- Design & Development -->
+
+            <div class="solutions__head" id="design-head" data-aos="fade"> Design & Development </div>
+            <div class="solutions__info" id="design-info">
+                <div class="info__wrapper">
+                    <div class="solutions__info__desc" id="network-info-desc">
+                        <div class="info__1__1" id=design-info1"> Design & Develop </div>
+                        <div class="info__1__2" id="design-info1-2">Your Next Big Thing </div>
+                        <div class="info__2" id="design-info2">With Us</div>
+                    </div>
+                    <div class="info__3" id="design-info3">
+                        <a href="{% url 'contact_view' %}"> Contact Us </a>
+                    </div>
+                </div>
+                <div class="solutions__gif">
+                    <lord-icon
+                        src="https://cdn.lordicon.com/nobciafz.json"
+                        trigger="loop"
+                        delay="3000"
+                        colors="primary:#21d4fd,secondary:#b721ff"
+                        style="width:250px;height:250px">
+                    </lord-icon>
+                </div>
+            </div>
+            <div class="solutions__container" id="network" data-aos="fade">
+                {% for solution in solutions %}
+                    {% if solution.solution_category == 'Design & Development' %}
+                    <div class="solutions__wrapper">
+                        <div class="solutions__card">
+                            <div class="div__1">
+                                <div class="solutions__name" id="network-name">
+                                    {{ solution.name }}
+                                </div>
+                            </div>
+                            <div class="div__2">
+                                <img  class="solutions__image" src="{{ solution.img.url }}" alt="sol-img" id="network-img">
+                                <div class="solutions__desc" id="network-desc">
+                                    {{ solution.desc }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                 {% endif %}
+                {% endfor %}
+            </div>
+
             <!-- Data Science & Analytics -->
             <div class="solutions__head" id="data-head">  Data Science & Analytics </div>
             <div class="solutions__info" id="data-info">
@@ -177,6 +223,52 @@
                             <!-- <div class="div__3">
                                 Some Stuff
                             </div> -->
+                        </div>
+                    </div>
+                 {% endif %}
+                {% endfor %}
+            </div>
+
+            <!-- Training & Development -->
+
+            <div class="solutions__head" id="design-head" data-aos="fade"> Training & Development </div>
+            <div class="solutions__info" id="design-info">
+                <div class="info__wrapper">
+                    <div class="solutions__info__desc" id="network-info-desc">
+                        <div class="info__1__1" id=design-info1"> Improve Your </div>
+                        <div class="info__1__2" id="design-info1-2"> Network Practices </div>
+                        <div class="info__2" id="design-info2">With Us</div>
+                    </div>
+                    <div class="info__3" id="design-info3">
+                        <a href="{% url 'contact_view' %}"> Contact Us </a>
+                    </div>
+                </div>
+                <div class="solutions__gif">
+                    <lord-icon
+                        src="https://cdn.lordicon.com/zpxybbhl.json"
+                        trigger="loop"
+                        delay="3000"
+                        colors="primary:#000046,secondary:#1cb5e0"
+                        style="width:250px;height:250px">
+                    </lord-icon>
+                </div>
+            </div>
+            <div class="solutions__container" id="network" data-aos="fade">
+                {% for solution in solutions %}
+                    {% if solution.solution_category == 'Training and Development' %}
+                    <div class="solutions__wrapper">
+                        <div class="solutions__card">
+                            <div class="div__1">
+                                <div class="solutions__name" id="network-name">
+                                    {{ solution.name }}
+                                </div>
+                            </div>
+                            <div class="div__2">
+                                <img  class="solutions__image" src="{{ solution.img.url }}" alt="sol-img" id="network-img">
+                                <div class="solutions__desc" id="network-desc">
+                                    {{ solution.desc }}
+                                </div>
+                            </div>
                         </div>
                     </div>
                  {% endif %}

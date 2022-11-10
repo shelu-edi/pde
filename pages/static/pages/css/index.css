@@ -298,6 +298,25 @@
 	color: #53526c;
 }
 
+@media screen and (max-width:1510px) {
+	.container__top {
+		height: 40vh;
+		text-align: center;
+	}
+
+	.int__container, .img__top {
+		height: 80vh;
+		text-align: center;
+	}
+
+	.about__container {
+		display:flex;
+		margin-top: 50vh;
+	}
+
+
+}
+
 @media screen and (max-width:960px) {
 	.main__container {
 		margin-bottom: 700px;

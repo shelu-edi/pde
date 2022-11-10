@@ -13,7 +13,7 @@ solution_category = (
 		('Data Analytics', 'Data Analytics'),
 		('Design & Development', 'Design & Development'),
 		('Big Data Science & AI', 'Big Data Science & AI'),
-		(' Training and Development', ' Training and Development '),
+		('Training and Development', 'Training and Development '),
 		('Blockchain Technology', 'Blockchain Technology'),
 	)
 

@@ -29,6 +29,7 @@ class HomeView(View):
 
 		return render(request, self.template_name, context)
 
+
 class SolutionView(View):
 	template_name = 'solutions.html'
 	queryset = Solution.objects.all()
@@ -43,11 +44,13 @@ class SolutionView(View):
 
 		return render(request, self.template_name, context)
 
+
 def about(request):
 	template = 'about.html'
 	context = {}
 
 	return render(request, template, context)
+
 
 class ContactView(View):
 	template_name = 'contact.html'
@@ -96,17 +99,20 @@ class ContactView(View):
 
 		return redirect(thanks)
 
+
 def thanks(request):
 	template = 'thanks.html'
 	context = {}
 
 	return render(request, template, context)
 
+
 def thanks2(request):
 	template = 'thanks2.html'
 	context = {}
 
 	return render(request, template, context)
+
 
 def joinus(request):
 	template = 'joinus.html'
@@ -116,6 +122,7 @@ def joinus(request):
 	}
 
 	return render(request, template, context)
+
 
 def job_apply(request, myid):
 	form = JobDetailForm(request.POST, request.FILES)
@@ -142,11 +149,13 @@ def job_apply(request, myid):
 		print(applicant)
 		return redirect(thanks2)
 
+
 def job_detail(request, myid):
 	job = Job.objects.get(id=myid)
 	description = job.description
 	form = JobDetailForm()
-	return render(request, "job_detail.html", {'job': job, 'description': description, 'form': form })
+	return render(request, "job_detail.html", {'job': job, 'description': description, 'form': form})
+
 
 def technology_partners(request):
 	template = 'technology_partners.html'

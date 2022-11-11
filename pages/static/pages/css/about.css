@@ -7,69 +7,85 @@
 
 .top__div {
 	height: 100%;
+	display: flex;
+	flex-direction: row;
 	width: 100vw;
+	background: #333399;
+	z-index: 10;
+	border-radius: 10px;
 }
 
 .top__div img {
-	height: 80vh;
-	width: 100vw;
-	z-index: 0;
+	height: 50vh;
+	width: 50vw;
+	animation: fadeIn 1s;
+}
+
+.top__desc {
+	display: flex;
+	flex-direction: column;
 }
 
 .div__1 {
 	text-align: center;
-	font-size: 3rem;
-	padding: 30px 0 0 0;
+	font-size: 2rem;
+	padding: 20px 0 0 0;
 	color: #FA8BFF;
 	animation: fadeIn 2s;
 
 }
 
 .div__2 {
-	padding: 40px 0 0 0;
+	padding: 20px 0 0 10px;
 	text-align: center;
-	font-size: 2rem;
+	font-size: 1.2rem;
 	color: #FA8BFF;
 	animation: fadeIn 2.5s;
 }
 
 .info__container {
-	box-shadow: .5px .25px .5px #FA8BFF;
+	align-items: center;
 }
 
 .info__head {
 	margin: 20px 0 20px 50px;
-	font-size: 4rem;
-	color:#B0A0FC;
+	text-align: center;
+	font-size: 2rem;
+	color:#fff;
 	animation: fadeIn 3s;
 }
 
 .info__div__1 {
-	margin: 20px 0 20px 50px;
-	font-size: 2rem;
-	color:#3a7bd5;
+	font-size: 1.2rem;
+	color:#fff;
 	animation: fadeIn 3.5s;
+	width: 95%;
+	padding: 0 20px;
 }
 
 .info__div__2 {
-	margin: 30px 0 20px 50px;
-	font-size: 2rem;
-	color:#3a6073;
+	font-size: 1.2rem;
+	color:#fff;
 	animation: fadeIn 4s;
+	width: 95%;
+	padding: 5px 20px 0 20px;
 }
 
 /* Crew */
 .crew__div{
 	display: flex;
 	flex-direction: column;
-	margin: 50px 0 0 0;
+	margin: 20px 0 0 0;
+	width: 100vw;
 	animation: fadeIn 5s;
+	background: #66aec7;
 }
 
 .crew__head {
+	text-align: center;
 	padding: 0 0 0 50px;
 	font-size: 3rem;
-	color: #21D4FD;
+	color: #333399;
 }
 
 .crew__wrapper {

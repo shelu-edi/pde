@@ -10,6 +10,11 @@
     height: 600px;
     margin: 0 auto;
     padding: 0 10px;
+
+    background-attachment: fixed;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
 }
 
 .img__top{
@@ -19,6 +24,8 @@
     /* border-radius: 10px; */ 
     animation: fadeIn 2s;
     object-fit: cover;
+
+    
 }
 
 .int__container {

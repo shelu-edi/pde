@@ -78,35 +78,44 @@
 	margin: 20px 0 0 0;
 	width: 100vw;
 	animation: fadeIn 5s;
-	background: #66aec7;
-}
+	/* background: #66aec7;
+ */}
 
 .crew__head {
 	text-align: center;
-	padding: 0 0 0 50px;
 	font-size: 3rem;
 	color: #333399;
 }
 
 .crew__wrapper {
-	padding: 0 0 0 50px;
+	padding: 0 0 0 0px;
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr;
+	justify-content: space-evenly;
 }
 
 .crew__card {
-	width: 300px;
+	display: flex;
+	flex-direction: row;
+	margin-top: 10px;
+	width: 80%;
 	height: 400px;
 	/* border:1px solid lightcoral; */
-	border-radius: 10px;
-	border-bottom-right-radius: 120px;
-	box-shadow: .5px .25px .5px #FA8BFF;
-	margin: 10px 0 0 20px;
+}
+
+.crew__card img {
+	width: 80%;
+}
+
+.crew__info {
+	width: 40vw;
+	background: #092F54;
+	color: #fff;
 }
 
 .crew__name {
 	padding: 20px 0 0 20px;
-	font-size: 2rem;
+	font-size: 1.5rem;
 	color: #B721FF;
 }
 
@@ -116,18 +125,8 @@
 	color: #21D4FD;
 }
 
-.crew__img {
-	width:250px;
-	height:250px;
+.crew_ql {
 	padding: 20px 0 0 20px;
-	border-radius: 10px;
-}
-
-.crew__img:hover {
-	cursor: pointer;
-	width:300px;
-	height:300px;
-	transition: .3s ease-in-out;
 }
 
 .form__div {
@@ -139,12 +138,61 @@
 	border-radius: 10px;
 }
 
-/* Animations */
-
-@keyframes fadeIn {
-	0% { opacity: 0; }
-    100% { opacity: 1; }
+/* Locations */
+.location__div {
+	display: flex;
+	flex-direction: column;
+	margin: 30px 0;
+	width:100vw;
+	height:80vh;
+	/* background: #092F54; */
 }
+
+.location__div img {
+	width:100vw;
+	height:80vh;
+	object-fit: cover;
+	position:absolute;
+	animation: fadeIn 5.5s;
+}
+
+.location__div h2 {
+	padding-top: 60px;
+	text-align: center;
+	font-size: 2.5rem;
+	color: #fff;
+	z-index:2;
+	animation: fadeIn 6s;
+}
+
+.location__wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	z-index:2;
+	animation: fadeIn 6.5s;
+}
+
+.location__card {
+	margin: 30px 0 0 20px;
+	width: 30vw;
+	height:30vh;
+	color: #fff;
+	text-align: center;
+	/* border: 1px solid #fff; */
+}
+
+.location__country {
+	margin: 30px 0 30px 100px;
+	text-align: left;
+	font-size: 1.8rem;
+}
+
+.location__phone, .location__address {
+	margin-left: 100px;
+	text-align: left;
+}
+
+
 
 /* Responsive */
 @media screen and (max-width:480px) {
@@ -176,5 +224,13 @@
 
 
 }
+
+/* Animations */
+
+@keyframes fadeIn {
+	0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
 
 

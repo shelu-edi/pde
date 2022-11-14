@@ -25,7 +25,7 @@ urlpatterns = [
 
     path('', HomeView.as_view(),  name='home_view'),
     path('solutions', SolutionView.as_view(),  name='solutions_view'),
-    path('about', about,  name='about_view'),
+    path('about', AboutView.as_view(),  name='about_view'),
     path('contact', ContactView.as_view(),  name='contact_view'),
     path('thanks', thanks,  name='thanks_view'),
     path('thanks2', thanks2, name='thanks2_view'),

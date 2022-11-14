@@ -44,12 +44,19 @@ class SolutionView(View):
 
 		return render(request, self.template_name, context)
 
+class AboutView(View):
+		template = 'about.html'
+		queryset = Employee.objects.all()
 
-def about(request):
-	template = 'about.html'
-	context = {}
+		def get_queryset(self):
+			return self.queryset
 
-	return render(request, template, context)
+		def get(self, request):
+			context = {
+				'employees': self.get_queryset(),
+			}
+
+			return render(request, self.template, context)
 
 
 class ContactView(View):

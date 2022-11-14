@@ -58,97 +58,16 @@
                         Our Crew
                     </div>
                     <div class="crew__wrapper">
+                        {% for employee in employees %}
                         <div class="crew__card">
-                            <img src="{% static 'pages/img/malinda-2.jpg' %}" alt="ind-img">
+                            <img src="{{ employee.img.url }}" alt="ind-img">
                             <div class="crew__info">
-                                <div class="crew__name">Malinda Wickramasinghe</div>
-                                <div class="crew__title">Chairman</div>
-                                <div class="crew_ql">
-                                    <!-- <ul>
-                                        <li>Masters in Business Administration (UK)</li>
-                                        <li>BEng(Hons) in Electrical and Electronic Engineering (UK)</li>
-                                        <li>BBA (Hons) in Business Administration(Finance Special ) (UOC)</li>
-                                        <li>CIMA Managerial Level 2</li>
-                                    </ul> -->
-                                </div>
+                                <div class="crew__name"> {{ employee.name }} </div>
+                                <div class="crew__title"> {{ employee.designation }} </div>
+                                <div class="crew_ql">{{ employee.desc }} </div>
                             </div>
                         </div>
-                        <div class="crew__card">
-                            <img src="{% static 'pages/img/nuwangi-1.jpg' %}" alt="ind-img">
-                            <div class="crew__info">
-                                <div class="crew__name">Nuwangi Thilakahewa</div>
-                                <div class="crew__title">Chief Executive Officer</div>
-                                <div class="crew_ql">
-                                    <!-- <ul>
-                                        <li>MSc in Sustainability Management</li>
-                                        <li>BA (Hons) in International Business Management</li>
-                                        <li>Advanced Cert in Data Analytics</li>
-                                        <li>CIMA Managerial Level 2</li>
-                                    </ul> -->
-                                </div>
-                            </div>
-                        </div>
-                        <div class="crew__card">
-                        <img src="{% static 'pages/img/trishan-1.jpg' %}" alt="ind-img">
-                            <div class="crew__info">
-                                <div class="crew__name">Trishan Wickramasinghe</div>
-                                <div class="crew__title">Vice President</div>
-                                <div class="crew_ql">
-                                   <!--  <ul>
-                                        <li>Masters in Business Administration (UK)</li>
-                                        <li>BEng(Hons) in Electrical and Electronic Engineering (UK)</li>
-                                        <li>BBA (Hons) in Business Administration(Finance Special ) (UOC)</li>
-                                        <li>CIMA Managerial Level 2</li>
-                                    </ul> -->
-                                </div>
-                            </div>
-                        </div>
-                        <div class="crew__card">
-                            <img src="{% static 'pages/img/shelu-1.jpg' %}" alt="ind-img">
-                            <div class="crew__info">
-                                <div class="crew__name">Shelumiel Ediriarachchi</div>
-                                <div class="crew__title">Vice President</div>
-                                <div class="crew_ql">
-                                    <!-- <ul>
-                                        <li>MSc in Sustainability Management</li>
-                                        <li>BA (Hons) in International Business Management</li>
-                                        <li>Advanced Cert in Data Analytics</li>
-                                        <li>CIMA Managerial Level 2</li>
-                                    </ul> -->
-                                </div>
-                            </div>
-                        </div>
-                        <div class="crew__card">
-                        <img src="{% static 'pages/img/milsath-1.jpg' %}" alt="ind-img">
-                            <div class="crew__info">
-                                <div class="crew__name">Milsath Ahamed</div>
-                                <div class="crew__title">Director</div>
-                                <div class="crew_ql">
-                                    <!-- <ul>
-                                        <li>Masters in Business Administration (UK)</li>
-                                        <li>BEng(Hons) in Electrical and Electronic Engineering (UK)</li>
-                                        <li>BBA (Hons) in Business Administration(Finance Special ) (UOC)</li>
-                                        <li>CIMA Managerial Level 2</li>
-                                    </ul> -->
-                                </div>
-                            </div>
-                        </div>
-                        <div class="crew__card">
-                            <img src="{% static 'pages/img/shelu-1.jpg' %}" alt="ind-img">
-                            <div class="crew__info">
-                                <div class="crew__name">Samodya Abeysekara</div>
-                                <div class="crew__title">Senior Multimedia Manager</div>
-                                <div class="crew_ql">
-                                    <!-- <ul>
-                                        <li>MSc in Sustainability Management</li>
-                                        <li>BA (Hons) in International Business Management</li>
-                                        <li>Advanced Cert in Data Analytics</li>
-                                        <li>CIMA Managerial Level 2</li>
-                                    </ul> -->
-                                </div>
-                            </div>
-                        </div>
-                        
+                        {% endfor %}
                     </div>
                 </div>
 
@@ -192,6 +111,26 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Tech Partners -->
+                <div class="partner__div">
+                    <p> Our Partners </p>
+                    <div class="partner__wrapper">
+                        <img src="{% static 'pages/img/tableau.png' %}" alt="partner-img" style="margin-top:35px">
+                        <img src="{% static 'pages/img/powerbi.png' %}" alt="partner-img">
+                        <img src="{% static 'pages/img/cisco.png' %}" alt="partner-img">
+                        <img src="{% static 'pages/img/google.png' %}" alt="partner-img">
+                        <img src="{% static 'pages/img/microsoft.png' %}" alt="partner-img">
+                        <img src="{% static 'pages/img/ibm.png' %}" alt="partner-img">
+                        <img src="{% static 'pages/img/juniper-networks.png' %}" alt="partner-img">
+                        <img src="{% static 'pages/img/nutanix.png' %}" alt="partner-img">
+                        <img src="{% static 'pages/img/paloalto.png' %}" alt="partner-img">
+                        <img src="{% static 'pages/img/checkpoint.png' %}" alt="partner-img">
+                        <img src="{% static 'pages/img/f5.png' %}" alt="partner-img">
+                        <img src="{% static 'pages/img/vmware.png' %}" alt="partner-img">
+                    </div>
+                </div>
+
             </section>
             
             

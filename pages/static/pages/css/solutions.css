@@ -9,31 +9,29 @@
     height: 600px;
     margin: 0 auto;
     padding: 0 10px;
-    background: #36D1DC;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #36D1DC;
+	background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC); 
+	background: linear-gradient(to right, #5B86E5, #36D1DC);
 
  }
 
-.top__container img{
-	width: 98%;
-	height:500px;
+/* .top__container img{
+	width: 100%;
+	height: 600px;
 	align-self: center;
-	border-radius: 20px;
 	animation: fadeIn 1s;
-	position: absolute;
+	position: relative;
 	object-fit: cover;
-	/* filter: blur(1px);
-    -webkit-filter: blur(1px); */
-}
+} */
 
 .top__head {
-	margin: 50px 0 0 0;
+	margin: 150px 0 0 0;
 	font-size: 5rem;
 	text-align: center;
 	z-index:900;
 	color: #fff;
 	animation: fadeIn 2s;
+	z-index:2;
 }
 
 .top__desc {
@@ -336,9 +334,11 @@
 }
 
 .solutions__wrapper{
-    height: 300px;
+    height: 100%;
     margin: 0 auto;
     padding: 0 10px;
+    width: 100%;
+    background: #092F54;
 }
 
 /* Solutions Card */
@@ -346,14 +346,15 @@
 .solutions__card{
 	display: grid;
 	grid-template-columns: 1fr;
-	/* width: 100%; */
+	width: 300px;
 	height: 300px;
+	width: 100%;
 	/* border: 1px solid black; */
 	justify-content: center;
 	animation: fadeIn 2s;
-	background: rgba(83, 82, 108, .1);
+	background: transparent;
 	border-radius: 5px;
-	box-shadow: 2px 1px 2px #66aec7;
+	/* box-shadow: 2px 1px 2px #66aec7; */
 }
 
 .div__1	{

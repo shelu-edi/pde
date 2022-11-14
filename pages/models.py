@@ -1,6 +1,15 @@
 from django.db import models
 from django.contrib.auth.models import User
 
+class Employee(models.Model):
+    full_name = models.CharField(max_length=1000)
+    designation = models.CharField(max_length=1000)
+    desc = models.TextField()
+    img = models.ImageField(upload_to='employees/img/')
+
+    def __str__(self):
+        return self.full_name + " " + self.designation
+
 class Job(models.Model):
     start_date = models.DateField()
     end_date = models.DateField()

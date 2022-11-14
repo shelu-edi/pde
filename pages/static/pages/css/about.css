@@ -1,6 +1,7 @@
 .main__container {
 	display:flex;
 	flex-direction: column;
+	width: 100vw;
 }
 
 /* Top Div */
@@ -88,34 +89,32 @@
 }
 
 .crew__wrapper {
-	padding: 0 0 0 0px;
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-	justify-content: space-evenly;
+	grid-template-columns: 1fr 1fr 1fr;
 }
 
 .crew__card {
 	display: flex;
 	flex-direction: row;
-	margin-top: 10px;
-	width: 80%;
-	height: 400px;
+	margin-top: 5px;
+	width: 100%;
+	height: 300px;
 	/* border:1px solid lightcoral; */
 }
 
 .crew__card img {
-	width: 80%;
+	width: 50%;
 }
 
 .crew__info {
-	width: 40vw;
+	width: 450px;
 	background: #092F54;
 	color: #fff;
 }
 
 .crew__name {
 	padding: 20px 0 0 20px;
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 	color: #B721FF;
 }
 

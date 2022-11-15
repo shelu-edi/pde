@@ -44,8 +44,8 @@ hr {
 }
 
 .footer__links {
-    width: 100%;
-    max-width: 1000px;
+    width: 100vw;
+    max-width: 100vw;
     display: flex;
     justify-content: center;
 }
@@ -73,7 +73,8 @@ hr {
     color: black;
     text-decoration: none;
     margin-bottom: 0.5rem;
-    transition: 0.3 ease-out;
+    font-size: .8rem;
+    transition: 0.3s ease-out;
 }
 
 .footer__link--items a:hover {

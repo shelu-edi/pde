@@ -18,13 +18,18 @@ from django.conf import settings
 class HomeView(View):
 	template_name = 'index.html'
 	queryset = Solution.objects.all()
+	jobs = Job.objects.all()
 
 	def get_queryset(self):
 		return self.queryset
 
+	def get_job(self):
+		return self.jobs
+
 	def get(self, request):
 		context = {
-		'solutions': self.get_queryset(),
+			'solutions': self.get_queryset(),
+			'jobs': self.get_job(),
 		}
 
 		return render(request, self.template_name, context)

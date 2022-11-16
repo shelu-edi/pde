@@ -70,46 +70,65 @@
                 </div>
 
             </div>
+
+            <!-- Solutions -->
             <div class="sol__container">                
                 <h1> Solutions </h1>
-                <div class="sol__top">
-                    <div class="top__1">
-                        <div class="top__1__1">
-                            Let Us 
-                        </div>
-                        <div class="top__1__2">
-                            Take Your Business To
-                        </div>
-                        <div class="top__1__3">
-                            The Next Level
-                        </div>
-                    </div>
-                    <div class="top__2">
-                        <img class="" alt="top-img" src="{% static 'pages/img/businessman.png' %}" />
-                    </div>
-                </div>
                 <div class="sol__wrapper"  data-aos="fade">
-                    {% for solution in solutions %}
-                    {% if solution.solution_type == 'Home' %}
                     <div class="sol__card">
-                        <img src="{{ solution.img.url }}" alt="sol-img">
-                        <div class="sol__name">
-                            {{ solution.name }}
+                        <h2> Network Solutions </h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, magni?</p>
+                        <img src="" alt="network-img">
+                        <div class="more__btn">
+                            <a href="{% url 'solutions_view' %}#network-head"> Learn More </a>
                         </div>
-                        <div class="sol__desc">
-                            {{ solution.desc }}
-                        </div>
-                        
                     </div>
-                    {% endif %}
-                    {% endfor %}
-                </div>
-                <div class="more__container">
-                    <a href="/solutions" title="">
-                        More
-                    </a>
+                    <div class="sol__card">
+                        <h2> Design & Development </h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, magni?</p>
+                        <img src="" alt="design-img">
+                        <div class="more__btn">
+                            <a href="{% url 'solutions_view' %}#design-head"> Learn More </a>
+                        </div>
+                    </div>
+                    <div class="sol__card">
+                        <h2> Data Science & Analytics </h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, magni?</p>
+                        <img src="" alt="data-img">
+                        <div class="more__btn">
+                            <a href="{% url 'solutions_view' %}#data-head"> Learn More </a>
+                        </div>
+                    </div>
+                    <div class="sol__card">
+                        <h2> Training & Development</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, magni?</p>
+                        <img src="" alt="training-img">
+                        <div class="more__btn">
+                            <a href="{% url 'solutions_view' %}#training-head"> Learn More </a>
+                        </div>
+                    </div>
+                    <div class="sol__card">
+                        <h2> BlockChain Technology </h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, magni?</p>
+                        <img src="" alt="blockchain-img">
+                        <div class="more__btn">
+                            <a href="{% url 'solutions_view' %}#blockchain-head"> Learn More </a>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+            <!-- Join -->
+            <div class="join__container">
+                <h1> Careers </h1>
+                <div class="join__info">
+                    <div class="join__desc">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                    </div>
+                    <img src="" alt="join-img">
+                </div>
+            </div>
+
         </div>
     {% endblock %}
 

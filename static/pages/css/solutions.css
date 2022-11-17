@@ -347,7 +347,7 @@
 	/* border: 1px solid black; */
 	justify-content: center;
 	animation: fadeIn 2s;
-	background: rgba(83, 82, 108, .1);
+	/*background: rgba(83, 82, 108, .01);*/
 	border-radius: 5px;
 	box-shadow: 2px 1px 2px #66aec7;
 }

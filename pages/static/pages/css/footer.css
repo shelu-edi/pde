@@ -210,5 +210,11 @@ hr {
         bottom: 50px;
     }
 
+    .footer__logo  img{
+        height: 50px;
+        width: 50px;
+        margin-bottom: 10px;
+    }
+
 
 }

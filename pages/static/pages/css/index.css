@@ -290,20 +290,21 @@
 	display: flex;
 	flex-direction: row;
 	height: 50vh;
-	background: #fff;
+	background: #23BECE;
 }
 
 .join__desc {
 	margin: 5vw 0 0 3vw;
 	font-size: 1.2rem;
 	width: 55%;
-	color: #B721FF;
+	color: #fff;
 }
 
 .join__info img {
 	margin-top: 1vw;
-	width: 40vw;
-	height: 30vh;
+	width: 60vw;
+	height: 40vh;
+	object-fit: cover;
 }
 .join__wrapper {
 	display: grid;
@@ -410,8 +411,10 @@
 	}
 
 	.int__container {
+		padding-top: 80px;
 		font-size: 3rem;
 		text-align: center;
+		height: 300px;
 	}
 
 	.about__container {
@@ -449,7 +452,7 @@
 	}
 
 	.sol__container h1 {
-		font-size: 2rem;
+		font-size: 1.5rem;
 	}
 
 	.sol__wrapper {
@@ -458,20 +461,65 @@
 
 	.sol__card {
 		width: 100%;
-		margin-left: 0;
+		margin: 0 100px 0 0;
 	}
 
 	.sol__card h2 {
-		font-size: 1.5rem;
+		font-size: 1.2rem;
 	}
 
 	.sol__card p {
-		font-size: 1rem;
+		font-size: .8rem;
 	}
 
 	.sol__card img {
-		margin: 10px 0;
+		margin: 10px 30px 10px 0;
 		border: 1px solid black;
+		width: 200px;
+		height: 200px;
+	}
+	.more__btn a {
+		padding:0 0 5px 8px;
+	}
+
+	.join__container, .join__info {
+		height: 350px;
+	}
+
+	.join__container h1 {
+		font-size: 1.5rem;
+	}
+
+	.join__desc {
+		font-size: .9rem;
+	}
+
+	.join__info  img{
+		width: 150px;
+		height: 100px;
+	}
+
+	.join__container h3 {
+		font-size: 1.2rem;
+	}
+
+	.join__wrapper {
+		grid-template-columns: 1fr;
+		align-items: center;
+	}
+
+	.join__card {
+		width: 400px;
+		/*border: 1px solid black;*/
+	}
+
+	.join__card p {
+		font-size: .8rem;
+		width: 300px;
+	}
+
+	.apply__btn {
+		font-size: .8rem;
 	}
 
 }

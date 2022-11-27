@@ -24,58 +24,58 @@
     {% block content %}
         <div class="main__container">
            <div class="container__top">
-               <div class="top__1">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, suscipit?
+               <div class="top__1" data-aos="fade">
+                    Age Of Intelligence
                </div>
                <div class="img__top">
                    <div class="img__wrapper">
-                       <img src="{% static 'pages/img/lap.png' %}" alt="top-img">
+                       <img src="{% static 'pages/img/lap.png' %}" alt="top-img" data-aos="fade" >
                    </div>
                </div>
            </div>
 
             <!-- Solutions -->
             <div class="sol__container">                
-                <h1> Solutions </h1>
+                <h1 data-aos="fade" > Solutions </h1>
                 <div class="sol__wrapper"  data-aos="fade">
-                    <div class="sol__card">
-                        <h2> Network Solutions </h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, magni?</p>
-                        <img src="" alt="network-img">
+                    <div class="sol__card" data-aos="fade">
+                        <h2 data-aos="fade" > Network Solutions </h2>
+                        <p data-aos="fade" >For All Network Related Solutions</p>
+                        <img src="{% static 'pages/img/network-home1.jpg' %}" alt="network-img" data-aos="fade">
                         <div class="more__btn">
                             <a href="{% url 'solutions_view' %}#network-head"> Learn More </a>
                         </div>
                     </div>
-                    <div class="sol__card">
-                        <h2> Design & Development </h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, magni?</p>
-                        <img src="" alt="design-img">
-                        <div class="more__btn">
-                            <a href="{% url 'solutions_view' %}#design-head"> Learn More </a>
+                    <div class="sol__card" data-aos="fade">
+                        <h2 data-aos="fade"> Design & Development </h2>
+                        <p data-aos="fade">All Software Related Solutions</p>
+                        <img src="{% static 'pages/img/design-home1.jpg' %}" alt="design-img" data-aos="fade">
+                        <div class="more__btn" data-aos="fade">
+                            <a href="{% url 'solutions_view' %}#design-head" > Learn More </a>
                         </div>
                     </div>
-                    <div class="sol__card">
-                        <h2> Data Science & Analytics </h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, magni?</p>
-                        <img src="" alt="data-img">
-                        <div class="more__btn">
-                            <a href="{% url 'solutions_view' %}#data-head"> Learn More </a>
+                    <div class="sol__card" data-aos="fade">
+                        <h2 data-aos="fade" > Data Science & Analytics </h2>
+                        <p data-aos="fade" >For An Automated Future</p>
+                        <img src="{% static 'pages/img/ai-home1.jpg' %}" alt="data-img" data-aos="fade" >
+                        <div class="more__btn" data-aos="fade" >
+                            <a href="{% url 'solutions_view' %}#data-head" > Learn More </a>
                         </div>
                     </div>
-                    <div class="sol__card">
-                        <h2> Training & Development</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, magni?</p>
-                        <img src="" alt="training-img">
-                        <div class="more__btn">
+                    <div class="sol__card" data-aos="fade">
+                        <h2  data-aos="fade" > Training & Development</h2>
+                        <p data-aos="fade" >For Leaders Of The Future</p>
+                        <img src="{% static 'pages/img/train-home1.jpg' %}" alt="training-img" data-aos="fade" >
+                        <div class="more__btn" data-aos="fade" >
                             <a href="{% url 'solutions_view' %}#training-head"> Learn More </a>
                         </div>
                     </div>
-                    <div class="sol__card">
-                        <h2> BlockChain Technology </h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, magni?</p>
-                        <img src="" alt="blockchain-img">
-                        <div class="more__btn">
-                            <a href="{% url 'solutions_view' %}#blockchain-head"> Learn More </a>
+                    <div class="sol__card" data-aos="fade">
+                        <h2 data-aos="fade" > BlockChain Technology </h2>
+                        <p data-aos="fade" > For The Future Of Finance </p>
+                        <img src="{% static 'pages/img/blockchain-home1.jpg' %}" alt="blockchain-img" data-aos="fade" >
+                        <div class="more__btn" data-aos="fade" >
+                            <a href="{% url 'solutions_view' %}#blockchain-head" > Learn More </a>
                         </div>
                     </div>
                 </div>
@@ -83,17 +83,22 @@
 
             <!-- Join -->
             <div class="join__container">
-                <h1> Careers </h1>
+                <h1 data-aos="fade"> Careers </h1>
                 <div class="join__info">
-                    <div class="join__desc">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                    <div class="join__top">
+                        <div class="join__desc" data-aos="fade">
+                            We Are Hiring !!!
+                        </div>
+                        <div class="join__btn" data-aos="fade">
+                            <a href="{% url 'join_view' %}" data-aos="fade"> Join Us </a>
+                        </div>
                     </div>
-                    <img src="{% static 'pages/img/lap.png' %}" alt="join-img">
+                    <img src="{% static 'pages/img/join1.jpg' %}" alt="join-img" data-aos="fade">
                 </div>
-                <h3>  Current Vacancies </h3>
+                <h3 data-aos="fade">  Current Vacancies </h3>
                 <div class="join__wrapper">
                     {% for job in jobs %}
-                    <div class="join__card">
+                    <div class="join__card" data-aos="fade">
                         <p> {{ job.title }} </p>
                         <div class="apply__btn">
                             <a href="{% url 'job_detail' job.id%}"> Apply Now </a>

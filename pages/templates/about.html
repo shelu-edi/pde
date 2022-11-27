@@ -30,22 +30,22 @@
         <div class="main__container">
             <section class="section" id="aboutus">
                 <div class="top__div">
-                    <img src="{% static 'pages/img/team-1.jpg' %}" alt="team-img">
+                    <img src="{% static 'pages/img/team-1.jpg' %}" alt="team-img" data-aos="fade">
                     <div class="top__desc">
-                        <div class="div__1">
+                        <div class="div__1" data-aos="fade">
                             Who We Are ?
                         </div>
-                        <div class="div__2">
+                        <div class="div__2" data-aos="fade">
                             P.D. Elaris and Company is a dynamic technological solutions provider that takes pride in its capacity to offer specialised solutions to address specific company needs.
                         </div>
-                        <div class="info__container">
+                        <div class="info__container" data-aos="fade">
                             <div class="info__head">
                                 Our Story
                             </div>
-                            <div class="info__div__1">
+                            <div class="info__div__1" data-aos="fade">
                                 P.D. Elaris and Company was established in 1932 and moving on to 2032, the company is modernizing its strategy to become the global leader in Data Analytics, Networking, AI, Machine Learning and Blockchain technology
                             </div>
-                            <div class="info__div__2">
+                            <div class="info__div__2" data-aos="fade">
                                 The Digital arm of the company was Founded in 2020, since then we have seen substantial growth as a result of our customer partnerships and growing community of loyal employees. 
                             </div>
                         </div>
@@ -54,17 +54,17 @@
                 
                 <!-- Crew -->
                 <div class="crew__div">
-                    <div class="crew__head">
+                    <div class="crew__head" data-aos="fade">
                         Our Crew
                     </div>
                     <div class="crew__wrapper">
                         {% for employee in employees %}
-                        <div class="crew__card">
-                            <img src="{{ employee.img.url }}" alt="ind-img">
+                        <div class="crew__card" data-aos="fade">
+                            <img src="{{ employee.img.url }}" alt="ind-img" data-aos="fade">
                             <div class="crew__info">
-                                <div class="crew__name"> {{ employee.name }} </div>
-                                <div class="crew__title"> {{ employee.designation }} </div>
-                                <div class="crew_ql">{{ employee.desc }} </div>
+                                <div class="crew__name" data-aos="fade"> {{ employee.name }} </div>
+                                <div class="crew__title" data-aos="fade"> {{ employee.designation }} </div>
+                                <div class="crew_ql" data-aos="fade">{{ employee.desc }} </div>
                             </div>
                         </div>
                         {% endfor %}
@@ -73,61 +73,61 @@
 
                 <!-- Locations -->
                 <div class="location__div" id="locations">                    
-                    <img src="{% static 'pages/img/map-1.jpg' %}" alt="">
-                    <h2> Our Locations </h2>
+                    <img src="{% static 'pages/img/map-1.jpg' %}" alt="location-img" data-aos="fade" >
+                    <h2 data-aos="fade" > Our Locations </h2>
                     <div class="location__wrapper">
                         <div class="location__card">
-                            <div class="location__country" > Sri Lanka </div>
-                            <div class="location__phone">+94 71 33 90000</div>
-                            <div class="location__address"> 4/112, Thalakotuwa Gardens,Colombo 05 </div>
+                            <div class="location__country" data-aos="fade"> Sri Lanka </div>
+                            <div class="location__phone" data-aos="fade">+94 71 33 90000</div>
+                            <div class="location__address" data-aos="fade"> 4/112, Thalakotuwa Gardens,Colombo 05 </div>
                         </div>
                         <div class="location__card">
-                            <div class="location__country" > Singapore Global </div>
-                            <div class="location__phone"> +94 71488 9000 </div>
-                            <div class="location__address"> sg@pdelaris.com </div>
+                            <div class="location__country" data-aos="fade"> Singapore Global </div>
+                            <div class="location__phone" data-aos="fade"> +94 71488 9000 </div>
+                            <div class="location__address" data-aos="fade"> sg@pdelaris.com </div>
                         </div>
                         <div class="location__card">
-                            <div class="location__country" > United Kingdom </div>
-                            <div class="location__phone"> +94 71488 9000  </div>
-                            <div class="location__phone"> +44 78 64284443 </div>
-                            <div class="location__address"> uk@pdelaris.com </div>
+                            <div class="location__country" data-aos="fade"> United Kingdom </div>
+                            <div class="location__phone" data-aos="fade"> +94 71488 9000  </div>
+                            <div class="location__phone" data-aos="fade"> +44 78 64284443 </div>
+                            <div class="location__address" data-aos="fade"> uk@pdelaris.com </div>
                         </div>
                         <div class="location__card">
-                            <div class="location__country" > Dubai </div>
-                            <div class="location__phone"> +94 71488 9000 </div>
-                            <div class="location__phone"> +91 52 862 6846  </div>
-                            <div class="location__address">  uae@pdelaris.com </div>
+                            <div class="location__country" data-aos="fade"> Dubai </div>
+                            <div class="location__phone" data-aos="fade"> +94 71488 9000 </div>
+                            <div class="location__phone" data-aos="fade"> +91 52 862 6846  </div>
+                            <div class="location__address" data-aos="fade">  uae@pdelaris.com </div>
                         </div>
                         <div class="location__card">
-                            <div class="location__country" > Japan </div>
-                            <div class="location__phone"> +94 71488 9000 </div>
-                            <div class="location__phone"> +81 80 4296 25551 </div>
-                            <div class="location__address"> jp@pdelaris.com </div>
+                            <div class="location__country" data-aos="fade"> Japan </div>
+                            <div class="location__phone" data-aos="fade"> +94 71488 9000 </div>
+                            <div class="location__phone" data-aos="fade"> +81 80 4296 25551 </div>
+                            <div class="location__address" data-aos="fade"> jp@pdelaris.com </div>
                         </div>
                         <div class="location__card">
-                            <div class="location__country" > Malaysia  </div>
-                            <div class="location__phone"> +94 71488 9000 </div>
-                            <div class="location__phone"> +60 16 49 60016 </div>
+                            <div class="location__country" data-aos="fade"> Malaysia  </div>
+                            <div class="location__phone" data-aos="fade"> +94 71488 9000 </div>
+                            <div class="location__phone" data-aos="fade"> +60 16 49 60016 </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Tech Partners -->
                 <div class="partner__div" id="partners_div">
-                    <p> Our Partners </p>
+                    <p data-aos="fade"> Our Partners </p>
                     <div class="partner__wrapper">
-                        <img src="{% static 'pages/img/tableau.png' %}" alt="partner-img" style="margin-top:35px">
-                        <img src="{% static 'pages/img/powerbi.png' %}" alt="partner-img">
-                        <img src="{% static 'pages/img/cisco.png' %}" alt="partner-img">
-                        <img src="{% static 'pages/img/google.png' %}" alt="partner-img">
-                        <img src="{% static 'pages/img/microsoft.png' %}" alt="partner-img">
-                        <img src="{% static 'pages/img/ibm.png' %}" alt="partner-img">
-                        <img src="{% static 'pages/img/juniper-networks.png' %}" alt="partner-img">
-                        <img src="{% static 'pages/img/nutanix.png' %}" alt="partner-img">
-                        <img src="{% static 'pages/img/paloalto.png' %}" alt="partner-img">
-                        <img src="{% static 'pages/img/checkpoint.png' %}" alt="partner-img">
-                        <img src="{% static 'pages/img/f5.png' %}" alt="partner-img">
-                        <img src="{% static 'pages/img/vmware.png' %}" alt="partner-img">
+                        <img src="{% static 'pages/img/tableau.png' %}" alt="partner-img" style="margin-top:35px" data-aos="fade">
+                        <img src="{% static 'pages/img/powerbi.png' %}" alt="partner-img" data-aos="fade">
+                        <img src="{% static 'pages/img/cisco.png' %}" alt="partner-img" data-aos="fade">
+                        <img src="{% static 'pages/img/google.png' %}" alt="partner-img" data-aos="fade">
+                        <img src="{% static 'pages/img/microsoft.png' %}" alt="partner-img" data-aos="fade">
+                        <img src="{% static 'pages/img/ibm.png' %}" alt="partner-img" data-aos="fade">
+                        <img src="{% static 'pages/img/juniper-networks.png' %}" alt="partner-img" data-aos="fade">
+                        <img src="{% static 'pages/img/nutanix.png' %}" alt="partner-img" data-aos="fade">
+                        <img src="{% static 'pages/img/paloalto.png' %}" alt="partner-img" data-aos="fade">
+                        <img src="{% static 'pages/img/checkpoint.png' %}" alt="partner-img" data-aos="fade">
+                        <img src="{% static 'pages/img/f5.png' %}" alt="partner-img" data-aos="fade">
+                        <img src="{% static 'pages/img/vmware.png' %}" alt="partner-img" data-aos="fade">
                     </div>
                 </div>
 

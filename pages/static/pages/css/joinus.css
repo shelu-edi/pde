@@ -20,7 +20,7 @@
   
     /* Set a specific height */
     height: 50%;
-    width: 100%;
+    width: 100vw;
   
     /* Position and center the image to scale nicely on all screens */
     /* background-position: center; */

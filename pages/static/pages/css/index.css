@@ -1,5 +1,5 @@
 .main__container {
-	margin: 0 0 1000px 0;
+	margin: 0 0 0 0;
 }
 
 /* Top Container */
@@ -17,8 +17,8 @@
 	/*border: 1px solid black;*/
 	height: 400px;
 	text-align: justify;
-	font-size: 1.5rem;
-	font-weight: 500;
+	font-size: 3rem;
+	font-weight: 800;
 	padding: 20vh 0 0 100px;
 	animation: fadeIn 2s;
 	color: #002060;
@@ -45,8 +45,6 @@
 	margin: 80px 0 0 120px;
 	animation: fadeIn 3s;
 }
-
-
 
 /* Solutions Container */
 
@@ -97,16 +95,18 @@
 
 .sol__card img {
 	align-self: center;
-	height: 30vh;
-	width: 30vh;
+	/*height: 25vh;*/
+	width: 530px;
 	object-fit: cover;
+	padding: 0 50px 10px 0;
+	border-radius: 10px;
 	/*border: 1px solid black;*/
 }
 
 
 .more__btn {
 	align-self: flex-end;
-	margin-right: 2vw;
+	margin-right: 50px;
 	background-color: #8BC6EC;
 	background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
 	width: 7vw;
@@ -143,8 +143,7 @@
 	display: flex;
     flex-direction: column;
     height: 100%;
-    margin: 100px  auto;
-    padding: 50px 0 0 0;
+    margin: 50px  auto;
     animation: fadeIn 5s;
 	/*background-color: #21D4FD;*/
 	/*background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);*/
@@ -163,20 +162,55 @@
 	display: flex;
 	flex-direction: row;
 	height: 50vh;
-	background: #23BECE;
+	/*background: #23BECE;*/
 }
 
 .join__desc {
 	margin: 5vw 0 0 3vw;
-	font-size: 1.2rem;
-	width: 55%;
+	font-size: 4rem;
+	width: 45vw;
+	color: #21D4FD;
+}
+
+.join__btn {
+	align-self: flex-end;
+	margin-left: 50px;
+	margin-top: 50px;
+	background-color: #8BC6EC;
+	background-image: linear-gradient(135deg, #21D4FD 0%, #002060 100%);
+	width: 7vw;
+	align-items: center;
+	height: 4vh;
+	padding: 7px 0 0 3px;
+	border-radius: 2px;
+}
+
+.join__btn a {
+	color: #fff;
+	align-self: center;
+	margin: 0 0 0 20px;
+}
+
+.join__btn:hover {
+	cursor: pointer;
+	background-image: linear-gradient(135deg, #002060 0%, #21D4FD 100%);
+	color: #fff;
+	transition: 1s ease-in;
+}
+
+.join__btn a {
+	color: #fff;
+}
+
+.join__btn:hover a{
+	text-decoration: none;
+	cursor: pointer;
 	color: #fff;
 }
 
 .join__info img {
 	margin-top: 1vw;
-	width: 60vw;
-	height: 40vh;
+	width: 1200px;
 	object-fit: cover;
 }
 .join__wrapper {

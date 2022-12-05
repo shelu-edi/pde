@@ -1,6 +1,7 @@
 .main__container {
 	display:flex;
 	flex-direction: column;
+	z-index: 999;
 }
 
 /* Top */
@@ -8,6 +9,7 @@
 .top__head {
 	display: flex;
 	flex-direction: column;
+	z-index: 999;
 }
 
 .line__1 {
@@ -38,6 +40,7 @@
 	grid-template-columns: 1fr;
 	margin: 20px 0 0 0;
 	align-self: center;
+	z-index: 999;
 }
 
 .form__div {
@@ -47,6 +50,7 @@
 	animation: fadeIn 2s;
 	/*box-shadow: 2px 1px 2px #66aec7;*/
 	border-radius: 10px;
+	color: #fff;
 	box-shadow: rgba(51,51,153, 0.4) 5px 5px, rgba(51,51,153, 0.3) 10px 10px;
 }
 

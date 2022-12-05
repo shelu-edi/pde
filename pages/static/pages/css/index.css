@@ -233,6 +233,7 @@
 	height: 4vh;
 	padding: 8px 0 0 2px;
 	z-index: 999;
+	opacity: .5;
 }
 
 .more__btn a {
@@ -240,11 +241,12 @@
 	align-self: center;
 	margin: 0 0 0 10px;
 	z-index: 999;
+	opacity: 1;
 }
 
 .more__btn:hover {
 	cursor: pointer;
-	background-image: linear-gradient(135deg, #9599E2 0%, #8BC6EC 100%);
+	background-image: linear-gradient(135deg, #9599E2 0%, #8BC6EC 100%);	
 	color: #fff;
 	transition: 1s ease-in;
 	z-index: 999;

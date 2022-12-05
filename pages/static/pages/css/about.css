@@ -2,6 +2,7 @@
 	display:flex;
 	flex-direction: column;
 	width: 100vw;
+	z-index: 999;
 }
 
 /* Top Div */
@@ -14,17 +15,20 @@
 	background: #fff;
 	z-index: 10;
 	border-radius: 10px;
+	z-index: 999;
 }
 
 .top__div img {
 	height: 50vh;
 	width: 50vw;
 	animation: fadeIn 1s;
+	z-index: 999;
 }
 
 .top__desc {
 	display: flex;
 	flex-direction: column;
+	z-index: 999;
 }
 
 .div__1 {
@@ -33,6 +37,7 @@
 	padding: 20px 0 0 0;
 	color: #FA8BFF;
 	animation: fadeIn 2s;
+	z-index: 999;
 
 }
 
@@ -43,6 +48,7 @@
 	color: #FA8BFF;
 	animation: fadeIn 2.5s;
 	width: 92%;
+	z-index: 999;
 }
 
 .info__container {
@@ -80,6 +86,7 @@
 	margin: 20px 0 0 0;
 	width: 100vw;
 	animation: fadeIn 5s;
+	z-index: 999;
 	/* background: #66aec7;
  */}
 
@@ -87,11 +94,13 @@
 	text-align: center;
 	font-size: 3rem;
 	color: #333399;
+	z-index: 999;
 }
 
 .crew__wrapper {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
+	z-index: 999;
 }
 
 .crew__card {
@@ -100,6 +109,7 @@
 	margin-top: 5px;
 	width: 100%;
 	height: 300px;
+	z-index: 999;
 	/* border:1px solid lightcoral; */
 }
 
@@ -109,7 +119,7 @@
 
 .crew__info {
 	width: 450px;
-	background: #092F54;
+	background: rgba(9, 47, 84, 0.5);
 	color: #fff;
 }
 
@@ -197,12 +207,14 @@
 .partner__div {
 	display: flex;
 	flex-direction: column;
+	z-index: 999;
 }
 
 .partner__div p {
 	text-align: center;
 	font-size: 2rem;
 	color: #333399;
+	z-index: 999;
 }
 
 .partner__wrapper {
@@ -210,6 +222,7 @@
 	display:grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 	justify-content:space-evenly;
+	z-index: 999;
 }
 
 .partner__wrapper img {

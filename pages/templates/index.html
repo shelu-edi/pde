@@ -22,63 +22,81 @@
 <body>
 
     {% block content %}
-        <video autoplay muted loop id="myVideo">
-            <source src="{% static 'pages/vid/web-back01.mp4' %}" type="video/mp4">
-        </video>
         <div class="main__container">
            <div class="container__top">
 
                <div class="top__1" data-aos="fade">
-                    Age Of Intelligence
-               </div>
+                    <li class="pde__container">
+                        <ul> A </ul>
+                        <ul> G </ul>
+                        <ul> E </ul>
+                        <ul>   </ul>
+                        <ul> O </ul>
+                        <ul> F </ul>
+                        <ul>   </ul>
+                        <ul> I </ul>
+                        <ul> N </ul>
+                        <ul> T </ul>
+                        <ul> E </ul>
+                        <ul> L </ul>
+                        <ul> L </ul>
+                        <ul> I </ul>
+                        <ul> G </ul>
+                        <ul> E </ul>
+                        <ul> N </ul>
+                        <ul> C </ul>
+                        <ul> E </ul>
+
+                    </li>
+               </div><!-- 
                <div class="img__top">
                    <div class="img__wrapper">
                        <img src="{% static 'pages/img/lap.png' %}" alt="top-img" data-aos="fade" >
                    </div>
-               </div>
+               </div> -->
            </div>
 
             <!-- Solutions -->
             <div class="sol__container">                
                 <h1 data-aos="fade" > Solutions </h1>
-                <div class="sol__wrapper"  data-aos="fade">
-                    <div class="sol__card" data-aos="fade">
-                        <h2 data-aos="fade" > Network Solutions </h2>
-                        <p data-aos="fade" >For All Network Related Solutions</p>
-                        <img src="{% static 'pages/img/network-home1.jpg' %}" alt="network-img" data-aos="fade">
+                <div class="sol__wrapper">
+                    <div class="sol__card">
+                        <h2> Network Solutions </h2>
+                        <p> For All Network Related Solutions</p>
+                        <img src="{% static 'pages/img/network-home1.jpg' %}" alt="network-img">
                         <div class="more__btn">
                             <a href="{% url 'solutions_view' %}#network-head"> Learn More </a>
                         </div>
                     </div>
-                    <div class="sol__card" data-aos="fade">
-                        <h2 data-aos="fade"> Design & Development </h2>
-                        <p data-aos="fade">All Software Related Solutions</p>
-                        <img src="{% static 'pages/img/design-home1.jpg' %}" alt="design-img" data-aos="fade">
-                        <div class="more__btn" data-aos="fade">
+                    <div class="sol__card"> 
+                        <h2>  Design & Development </h2>
+                        <p> All Software Related Solutions</p>
+                        <img src="{% static 'pages/img/design-home1.jpg' %}" alt="design-img">
+                        <div class="more__btn"> 
                             <a href="{% url 'solutions_view' %}#design-head" > Learn More </a>
                         </div>
                     </div>
-                    <div class="sol__card" data-aos="fade">
-                        <h2 data-aos="fade" > Data Science & Analytics </h2>
-                        <p data-aos="fade" >For An Automated Future</p>
-                        <img src="{% static 'pages/img/ai-home1.jpg' %}" alt="data-img" data-aos="fade" >
-                        <div class="more__btn" data-aos="fade" >
+                    <div class="sol__card">
+                        <h2> Data Science & Analytics </h2>
+                        <p>For An Automated Future</p>
+                        <img src="{% static 'pages/img/ai-home1.jpg' %}" alt="data-img" >
+                        <div class="more__btn" >
                             <a href="{% url 'solutions_view' %}#data-head" > Learn More </a>
                         </div>
                     </div>
-                    <div class="sol__card" data-aos="fade">
-                        <h2  data-aos="fade" > Training & Development</h2>
-                        <p data-aos="fade" >For Leaders Of The Future</p>
-                        <img src="{% static 'pages/img/train-home1.jpg' %}" alt="training-img" data-aos="fade" >
-                        <div class="more__btn" data-aos="fade" >
+                    <div class="sol__card">
+                        <h2> Training & Development</h2>
+                        <p>For Leaders Of The Future</p>
+                        <img src="{% static 'pages/img/train-home1.jpg' %}" alt="training-img" >
+                        <div class="more__btn" >
                             <a href="{% url 'solutions_view' %}#training-head"> Learn More </a>
                         </div>
                     </div>
-                    <div class="sol__card" data-aos="fade">
-                        <h2 data-aos="fade" > BlockChain Technology </h2>
-                        <p data-aos="fade" > For The Future Of Finance </p>
-                        <img src="{% static 'pages/img/blockchain-home1.jpg' %}" alt="blockchain-img" data-aos="fade" >
-                        <div class="more__btn" data-aos="fade" >
+                    <div class="sol__card">
+                        <h2> BlockChain Technology </h2>
+                        <p> For The Future Of Finance </p>
+                        <img src="{% static 'pages/img/blockchain-home1.jpg' %}" alt="blockchain-img" >
+                        <div class="more__btn" >
                             <a href="{% url 'solutions_view' %}#blockchain-head" > Learn More </a>
                         </div>
                     </div>

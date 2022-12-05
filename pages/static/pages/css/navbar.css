@@ -1,6 +1,6 @@
 .navbar {
     /* background: #1C2331; */    
-    position: sticky;
+    position: fixed;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -9,7 +9,7 @@
     top: 0;
     z-index: 10000;
     border: none;
-    background: #fff;
+    background: rgba(0, 0, 0, .2);
 }
 
 .navbar__container {
@@ -53,6 +53,10 @@
     height: 80px;
 }
 
+.dropdown-menu {
+    background: background: rgba(0, 0, 0, .2);
+}
+
 .navbar__links {
     color: slategrey;
     display: flex;
@@ -62,7 +66,8 @@
     text-decoration: none;
     height: 100%;
     transition: all 0.3s ease;
-    color: #333399;
+    /* color: #333399; */
+    color: #fff;
 }
 
 .navbar__links:hover {

@@ -1,11 +1,11 @@
 .navbar {
     /* background: #1C2331; */    
-    position: fixed;
+    position: sticky;
     height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.2rem;    
+    font-size: 1.2rem;
     top: 0;
     z-index: 400;
     border: none;
@@ -13,7 +13,6 @@
 }
 
 .navbar__container {
-    position: fixed;
     display: flex;
     justify-content: space-between;
     height: 80px;

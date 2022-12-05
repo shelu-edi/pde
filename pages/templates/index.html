@@ -22,8 +22,12 @@
 <body>
 
     {% block content %}
+        <video autoplay muted loop id="myVideo">
+            <source src="{% static 'pages/vid/web-back01.mp4' %}" type="video/mp4">
+        </video>
         <div class="main__container">
            <div class="container__top">
+
                <div class="top__1" data-aos="fade">
                     Age Of Intelligence
                </div>

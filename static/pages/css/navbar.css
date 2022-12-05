@@ -1,19 +1,19 @@
 .navbar {
     /* background: #1C2331; */    
-    position: sticky;
+    position: fixed;
     height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;    
     top: 0;
-    z-index: 10000;
+    z-index: 400;
     border: none;
     background: transparent;
 }
 
 .navbar__container {
-    position: absolute;
+    position: fixed;
     display: flex;
     justify-content: space-between;
     height: 80px;
@@ -22,6 +22,7 @@
     max-width: 1300px;
     margin: 0 auto;
     padding: 0 50px;
+    background: transparent;
 }
 
 #navbar__logo {

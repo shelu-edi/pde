@@ -17,7 +17,7 @@ hr {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    width: 100vw;
+    width: 100%;
     align-items: center;
     color: slategrey;
     z-index: 999;
@@ -85,7 +85,7 @@ hr {
 }
 
 .footer__link--items a:hover {
-    color: #ED4934;
+    color: #333399;
     transition: 0.3s ease-out;
     text-decoration: none;
 
@@ -107,6 +107,7 @@ hr {
 .social__media {
     max-width: 1000px;
     width: 100%;
+     z-index: 999;
 }
 
 .social__media--wrap {
@@ -116,6 +117,7 @@ hr {
     width: 90%;
     max-width: 1000px;
     margin: 40px auto 0 auto;
+     z-index: 999;
 }
 
 .social__icons {
@@ -124,6 +126,7 @@ hr {
     /* justify-content: normal; */
     align-items: center;
     width: 240px;
+    z-index: 999;
 }
 
 .wesite__rights {
@@ -142,8 +145,8 @@ hr {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background: #000046;
-    border-color: #53526c;
+    background: rgba(0, 0, 0, 70, .5);
+    /* border-color: #53526c; */
     display: none;
     z-index: 999;
     -webkit-transition: all 0.3s linear;

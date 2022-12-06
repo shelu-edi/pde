@@ -23,6 +23,7 @@
 	width: 50vw;
 	animation: fadeIn 1s;
 	z-index: 999;
+	border-radius: 10px;
 }
 
 .top__desc {
@@ -223,6 +224,7 @@
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 	justify-content:space-evenly;
 	z-index: 999;
+	width:100%;
 }
 
 .partner__wrapper img {

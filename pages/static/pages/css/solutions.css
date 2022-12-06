@@ -684,18 +684,18 @@
 
 	.solutions__wrapper {
 		height: 100%;
-		background: #fff;
+		background: rgba(0, 0, 0, .5);
 	}
 
 	.solutions__card {
 		height: 500px;
 		width: 396px;
-		padding-left: 50px;
-		background: #fff;
+		padding-left: 10px;
 	}
 
 	.solutions__name {
-		font-size: 1rem;
+		font-size: .9rem;
+		margin-right: 10px;
 	}
 	.div__2 {
 		grid-template-columns: 1fr;
@@ -703,7 +703,7 @@
 
 	.solutions__desc {
 		padding-left: 10px;
-		font-size: .8rem;
+		font-size: .9rem;
 	}
 
 	.solutions__image {

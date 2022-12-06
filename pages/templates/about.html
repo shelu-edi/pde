@@ -32,7 +32,7 @@
                 <div class="top__div">
                     <img src="{% static 'pages/img/team-1.jpg' %}" alt="team-img" data-aos="fade">
                     <div class="top__desc">
-                        <div class="div__1" data-aos="fade">
+                        <div class="div__1" data-aos="fade" id="who-we-are">
                             Who We Are ?
                         </div>
                         <div class="div__2" data-aos="fade">
@@ -57,7 +57,7 @@
                     <div class="crew__head" data-aos="fade">
                         Our Crew
                     </div>
-                    <div class="crew__wrapper">
+                    <div class="crew__wrapper" id="employee">
                         {% for employee in employees %}
                         <div class="crew__card" data-aos="fade">
                             <img src="{{ employee.img.url }}" alt="ind-img" data-aos="fade">

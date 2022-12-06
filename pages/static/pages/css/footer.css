@@ -13,7 +13,7 @@ hr {
 
 .footer__container {
     background: rgba(0, 0, 0, .2);
-    padding: 5rem 0;
+    padding: 5rem 0 5rem 10rem;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -41,8 +41,8 @@ hr {
 }
 
 .footer__logo img {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     z-index: 999;
 }
 
@@ -65,12 +65,13 @@ hr {
     align-items: flex-start;
     margin: 16px;
     text-align: left;
-    width: 160px;
+    width: 300px;
     box-sizing: border-box;    
     color: #fff;
 }
 
 .footer__link--items h2 {
+    font-size: 1.4rem;
     margin-bottom: 16px;
     color: #333399;
 }

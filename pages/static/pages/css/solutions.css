@@ -1,5 +1,6 @@
 .main__container {
 	margin: 0 0 0 0;
+	z-index: 999;
 }
 
 /* Top Container */
@@ -84,7 +85,7 @@
 .solutions__head {
 	font-size: 2rem;
 	padding: 20px 0 10px 20px;
-	z-index: 999;
+	z-index: 9999;
 }
 
 #network-head {

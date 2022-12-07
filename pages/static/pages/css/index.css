@@ -225,14 +225,14 @@
 	align-self: flex-end;
 	margin-right: 50px;
 	margin-top: 10px;
-	background-color: #8BC6EC;
-	background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+	/* background-color: #8BC6EC; */
+	/* background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%); */
+	background: rgba(0, 0, 0, 0.5);
 	width: 7vw;
 	align-items: center;
 	height: 4vh;
 	padding: 8px 0 0 2px;
 	z-index: 999;
-	opacity: .5;
 }
 
 .more__btn a {
@@ -245,7 +245,7 @@
 
 .more__btn:hover {
 	cursor: pointer;
-	background-image: linear-gradient(135deg, #9599E2 0%, #8BC6EC 100%);	
+	/* background-image: linear-gradient(135deg, #9599E2 0%, #8BC6EC 100%); */	
 	color: #fff;
 	transition: 1s ease-in;
 	z-index: 999;
@@ -253,14 +253,16 @@
 
 .more__btn a {
 	color: #fff;
-	z-index: 999;
+	z-index: 999;	
 }
 
 .more__btn:hover a{
 	text-decoration: none;
 	cursor: pointer;
 	color: #fff;
-	z-index: 999;
+	z-index: 999;	
+	margin-left: 6px;
+	transition: .5s ease-in;
 }
 
 /*  Join */

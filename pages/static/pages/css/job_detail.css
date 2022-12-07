@@ -1,6 +1,7 @@
 .main__container {
 	display:flex;
 	flex-direction: column;
+	z-index: 100;
 }
 
 /* Top */
@@ -8,6 +9,7 @@
 .top__head {
 	display: flex;
 	flex-direction: column;
+	z-index: 100;
 }
 
 .line__1 {
@@ -19,6 +21,7 @@
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
     animation: fadeIn 1s;
+    z-index: 100;
 }
 
 .line__2 {
@@ -30,21 +33,30 @@
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
     animation: fadeIn 1.5s;
+    z-index: 100;
 }
 
 .middle__div {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	margin: 20px 0 0 0;
+	z-index: 100;
+	background: rgba(0, 0, 0, .5);
+	color: #fff;
 }
 
 .form__div {
-	padding: 0 20px 0 20px;
+	padding: 10px 20px 0 20px;
 	width: 60%;
 	justify-self: center;
 	animation: fadeIn 2s;
-	box-shadow: 0 1px 1px #66aec7;
 	border-radius: 10px;
+	border: 1px solid rgba(83,82,108,1);
+}
+
+.form__div input {
+	background: rgba(0, 0, 0, .5);
+	color: #fff;
 }
 
 .form__btn {
@@ -69,7 +81,7 @@
 	height:100%;
 	width:60%;
 	border-radius: 3px;
-	background: #fff;
+	background: rgba(0, 0, 0, .5);
 	padding: 0 20px 0 20px;
     margin-left: 10vw;
 }
@@ -86,7 +98,7 @@
 	padding:80px 10px;
 	height: 480px;
 	text-align: justify;
-	color: #53526c;
+	color: #fff;
 	animation: fadeIn 2.5s;
 }
 
@@ -160,7 +172,7 @@
     }
 
 	.form__div {
-        margin-top: 0;
+        margin-top: 50px;
 		padding-bottom: 20px;
 		width: 90%;
         font-size: .9rem;

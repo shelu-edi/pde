@@ -1,6 +1,6 @@
 .main__container {
 	margin: 0 0 0 0;
-	z-index: 999;
+	z-index: 100;
 }
 
 /* Top Container */
@@ -29,7 +29,7 @@
 	margin: 150px 0 0 0;
 	font-size: 5rem;
 	text-align: center;
-	z-index:999;
+	z-index:100;
 	color: #fff;
 	animation: fadeIn 2s;
 	z-index:2;
@@ -85,42 +85,42 @@
 .solutions__head {
 	font-size: 2rem;
 	padding: 20px 0 10px 20px;
-	z-index: 9999;
+	z-index: 100;
 }
 
 #network-head {
 	color:#FF9A8B;
-	z-index: 999;
+	z-index: 100;
 }
 
 #digital-head {
 	color: #FA8BFF;	
 	margin: 20px 0 0 0;
-	z-index:999;
+	z-index:100;
 }
 
 #design-head {
 	color: #21D4FD;
 	margin: 20px 0 0 0;
-	z-index:999;
+	z-index:100;
 }
 
 #data-head {
 	color: #FF3CAC;	
 	margin: 20px 0 0 0;
-	z-index:999;
+	z-index:100;
 }
 
 #training-head {
 	color: #000046;
 	margin: 20px 0 0 0;
-	z-index:999;
+	z-index:100;
 }
 
 #blockchain-head {
 	color: #0052D4;
 	margin: 20px 0 0 0;
-	z-index:999;
+	z-index:100;
 }
 
 
@@ -128,119 +128,119 @@
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	margin: 50px 0 20px 50px;
-	z-index: 999;
+	z-index: 100;
 }
 
 .solutions__info__desc {
-	z-index: 999;
+	z-index: 100;
 }
 
 .info__1__1 {
 	font-size: 2rem;
-	z-index: 999;
+	z-index: 100;
 }
 
 .info__1__2 {
 	font-size: 2.3rem;
-	z-index: 999;
+	z-index: 100;
 }
 
 
 #network-info1 {
 	color: #FF6A88;
 	animation: moveToRight 2s;
-	z-index:999;
+	z-index:100;
 }
 
 #network-info1-2 {
 	color: #FF99AC;
 	animation: moveToRight 2.5s;
-	z-index:999;
+	z-index:100;
 }
 
 #digital-info1 {
 	color: #2BD2FF;
-	z-index:999;
+	z-index:100;
 }
 
 #digital-info1-2 {
 	color: #EE74E1;
-	z-index:999;
+	z-index:100;
 }
 
 #design-info1 {
 	color: #B721FF;
-	z-index:999;
+	z-index:100;
 }
 
 #design-info1-2 {
 	color: #21D4FD;
-	z-index:999;
+	z-index:100;
 }
 
 #data-info1 {
 	color: #FF6A88;
-	z-index:999;
+	z-index:100;
 }
 
 #data-info1-2 {
 	color: #FF99AC;
-	z-index:999;
+	z-index:100;
 }
 
 #training-info1 {
 	color: #1cb5e0;
-	z-index:999;
+	z-index:100;
 }
 
 #training-info1-2 {
 	color: #000046;
-	z-index:999;
+	z-index:100;
 
 }#blockchain-info1 {
 	color: #9CECFB;
-	z-index:999;
+	z-index:100;
 }
 
 #blockchain-info1-2 {
 	color: #65C7F7;
-	z-index:999;
+	z-index:100;
 }
 
 .info__2 {
 	font-size: 3rem;
 	margin: 20px 0 20px 0;
-	z-index: 999;
+	z-index: 100;
 }	
 
 #network-info2 {
 	color: #FF99AC;
 	animation: moveToRight 3s;
-	z-index: 999;
+	z-index: 100;
 }
 
 #digital-info2 {
 	color: #EE74E1;
-	z-index: 999;
+	z-index: 100;
 }
 
 #design-info2 {
 	color: #21D4FD;
-	z-index: 999;
+	z-index: 100;
 }
 
 #data-info2 {
 	color: #FF99AC;
-	z-index: 999;
+	z-index: 100;
 }
 
 #training-info2 {
 	color:#1cb5e0;
-	z-index: 999;
+	z-index: 100;
 }
 #blockchain-info2 {
 	color:#0052D4;
-	z-index: 999;
+	z-index: 100;
 }
 
 .info__3 {
@@ -251,111 +251,111 @@
 	width: 120px;
 	height: 50px;
 	border-radius: 10px;
-	z-index: 999;
+	z-index: 100;
 }
 
 #network-info3 {
 	background: #FF99AC;
 	animation: moveToRight 3.5s;
-	z-index: 999;
+	z-index: 100;
 }
 
 #network-info3:hover {
 	background: #fff;
 	border: 1px solid #FF6A88;
-	z-index: 999;
+	z-index: 100;
 }
 
 #network-info3:hover a{
 	color: #FF6A88;	
-	z-index: 999;
+	z-index: 100;
 }
 
 #digital-info3 {
 	background: #2BD2FF;
-	z-index: 999;
+	z-index: 100;
 }
 
 #digital-info3:hover {
 	background: #fff;
 	border: 1px solid #EE74E1;
-	z-index: 999;
+	z-index: 100;
 }
 
 #digital-info3:hover a{
 	color: #EE74E1;	
-	z-index: 999;
+	z-index: 100;
 }
 
 #design-info3 {
 	background: #21D4FD;
-	z-index: 999;
+	z-index: 100;
 }
 
 #design-info3:hover {
 	background: #fff;
 	border: 1px solid #B721FF;
-	z-index: 999;
+	z-index: 100;
 }
 
 #design-info3:hover a{
 	color: #B721FF;
-	z-index: 999;
+	z-index: 100;
 }
 
 #data-info3 {
 	background: #FF99AC;
-	z-index: 999;
+	z-index: 100;
 }
 
 #data-info3:hover {
 	background: #fff;
 	border: 1px solid #FF99AC;
-	z-index: 999;
+	z-index: 100;
 }
 
 #data-info3:hover a{
 	color: #FF99AC;	
-	z-index: 999;
+	z-index: 100;
 }
 
 #training-info3 {
 	background: #000046;
-	z-index: 999;
+	z-index: 100;
 }
 
 #training-info3:hover {
 	background: #fff;
 	border: 1px solid #1cb5e0;
-	z-index: 999;
+	z-index: 100;
 }
 
 #training-info3:hover a{
 	color: #000046;
-	z-index: 999;
+	z-index: 100;
 }
 
 #blockchain-info3 {
 	background: #0052D4;
-	z-index: 999;
+	z-index: 100;
 }
 
 #blockchain-info3:hover {
 	background: #fff;
 	border: 1px solid #65C7F7;
-	z-index: 999;
+	z-index: 100;
 }
 
 #blockchain-info3:hover a{
 	color: #0052D4;
-	z-index: 999;
+	z-index: 100;
 }
 
 
 
 .info__3 a {
 	color: #fff;
-	z-index: 999;
+	z-index: 100;
 }
 
 .info__3:hover {
@@ -363,7 +363,7 @@
 	background: #fff;
 	transition: all .5s ease-in-out;		
 	cursor: pointer;
-	z-index: 999;
+	z-index: 100;
 }
 
 .info__3:hover a{
@@ -372,19 +372,19 @@
 
 .solutions__gif {
 	margin: 0 0 0 100px;
-	z-index: 999;
+	z-index: 100;
 }
 
 #network-gif {
 	animation: fadeIn 4s;
-	z-index: 999;
+	z-index: 100;
 }
 
 
 .solutions__container{	
 	display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    z-index: 999;
+    z-index: 100;
     background: rgba(0, 0, 0, .5);
 }
 
@@ -393,7 +393,7 @@
     margin: 0 auto;
     padding: 0 10px;
     width: 100%;
-    z-index: 999;
+    z-index: 100;
     background: rgba(0, 0, 0, .5);
     /*background: #FFDEE9;*/
 }
@@ -411,7 +411,7 @@
 	animation: fadeIn 2s;
 	background: transparent;
 	border-radius: 5px;
-	z-index: 999;
+	z-index: 100;
 	/* box-shadow: 2px 1px 2px #66aec7; */
 }
 

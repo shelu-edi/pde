@@ -1,7 +1,7 @@
 /* Container holding the image and the text */
 .container {
     position: relative;
-    z-index: 999;
+    z-index: 100;
   }
   
 /* Place text in the middle of the image */
@@ -36,24 +36,24 @@
 	font-size: 4rem;
 	color:#f0f0f0;
 	animation: fadeIn 3s;
-   z-index: 999;
+   z-index: 100;
 }
 
 
 section {
-  z-index: 999;
+  z-index: 100;
 }
 
 #careers {
-   z-index: 999;
+   z-index: 100;
 }
 
 .table thead {
-  z-index: 999;
+  z-index: 100;
 }
 
 .join__head {
-  z-index: 999;
+  z-index: 100;
 }
 
 
@@ -88,7 +88,7 @@ section {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  z-index: 999;
+  z-index: 100;
 }
 
 .button-81:hover {

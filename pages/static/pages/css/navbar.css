@@ -53,8 +53,8 @@
     height: 80px;
 }
 
-.dropdown-menu {
-    background: background: rgba(0, 0, 0, .2);
+.dropdown-item, .dropdown-item {
+   background-color: rgba(1, 1, 1, .5);
 }
 
 .navbar__links {
@@ -123,13 +123,14 @@
     }
 
     .navbar__menu.active {
-        background: #fff;
+        background: rgba(0, 0, 0, .8);
+        width: 100%;
         top: 100%;
         opacity: 1;
         transition: all 0.5s ease;
         z-index: 99;
-        height: 80vh;
-        font-size: 1.6rem;
+        height: 100vh;
+        font-size: 1.2rem;
         margin-right: 50px;
     }
 
@@ -177,6 +178,10 @@
         top: 20%;
         right: 5%;
         transform: translate(5%, 20%);
+    }
+
+    .dropdown__menu {
+        align-self: center;
     }
 
     .navbar__toggle .bar {

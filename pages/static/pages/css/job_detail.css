@@ -41,8 +41,6 @@
 	grid-template-columns: 1fr 1fr;
 	margin: 20px 0 0 0;
 	z-index: 100;
-	background: rgba(0, 0, 0, .5);
-	color: #fff;
 }
 
 .form__div {

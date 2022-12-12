@@ -380,7 +380,7 @@
 .join__container h3 {
 	animation: fadeIn 5s;
 	padding: 50px 0 20px 50px;
-	color: #002060;
+	color: #fff;
 	font-weight: 400;
 	z-index: 100;
 }
@@ -429,9 +429,9 @@
 }
 
 @media screen and (max-width:960px) {
-	.main__container {
+	/* .main__container {
 		margin-bottom: 700px;
-	}
+	} */
 
 	.top__1 {
 		padding-left: 5px;
@@ -456,6 +456,17 @@
 		height: 100%;
 	}
 
+	.div__1 {
+		margin-left: -80px;
+		height: 350px;
+	}
+
+	.div__2 {
+		padding-left: 0;
+		height: 350px;
+		margin-right: 20px;
+	}
+
 	.sol__wrapper {
 		grid-template-columns: 1fr;
 		padding-left: 15vw;
@@ -466,6 +477,10 @@
 		height: 50vh;
 		align-self: center;
 		/*border: 1px solid black;*/
+	}
+
+	.sol__card h2 {
+		font-size: 24px;
 	}
 
 	.more__btn {
@@ -501,6 +516,14 @@
 		margin-left: 80px;
 		width: 100px;
 		height: 40px;
+	}
+
+	.join__card p {
+		font-size: 12px;
+	}
+
+	.apply__btn {
+		width: 100px;
 	}
 
 }
@@ -572,6 +595,16 @@
 		font-size: 1.5rem;
 	}
 
+	.div__1, .div__2 {
+		grid-template-columns: 1fr;
+		height:100%;
+		padding-left: 100px;
+	}
+
+	.div__2 {
+		padding-left:0;
+	}
+
 	.sol__wrapper {
 		grid-template-columns: 1fr;
 	}
@@ -610,6 +643,10 @@
 
 	.join__desc {
 		font-size: .9rem;
+	}
+
+	.join__info {
+		padding-bottom: 10px;
 	}
 
 	.join__info  img{

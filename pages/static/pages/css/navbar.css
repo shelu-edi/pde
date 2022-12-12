@@ -182,7 +182,7 @@
     }
 
     .dropdown__menu {
-        align-self: center;
+        margin-left: 200px;
     }
 
     .navbar__toggle .bar {

@@ -33,27 +33,37 @@
 
 .info__head {
 	margin: 20px 0 20px 50px;
-	font-size: 4rem;
+	font-size: 5rem;
 	color:#f0f0f0;
 	animation: fadeIn 3s;
-   z-index: 100;
+  z-index: 100;
 }
 
 
 section {
   z-index: 100;
+  position: relative;
 }
 
 #careers {
    z-index: 100;
 }
 
-.table thead {
-  z-index: 100;
+.opening__head {
+  z-index: 300;
+  font-size: 32px;
+  color: #fff;
+  margin-bottom: 50px;
 }
 
 .join__head {
-  z-index: 100;
+  z-index: 300;
+  color: #fff;
+}
+
+.job__title {
+  z-index: 700;
+  color: #fff;
 }
 
 
@@ -96,14 +106,31 @@ section {
   color: #0078d0;
 }
 
-@media (min-width: 768px) {
+
+
+/* Responsive */
+@media (max-width: 768px) {
   .button-81 {
     font-size: 1.125rem;
     padding: 1rem 2rem;
   }
+
+  .info__head {
+    font-size: 1.8rem;
+    margin-left: -10px;
+  }
+
+  .opening__head h1 {
+    font-size: 1.5rem;
+    border: 1px solid #fff;
+  }
+
+  .job__title {
+    font-size: 1rem;
+  }
+
 }
 
-/* Responsive */
 @media screen and (max-width:480px) {
 
 	.top__div {
@@ -119,7 +146,7 @@ section {
 	}
 
 	.info__head {
-		font-size: 2rem;
+		font-size: 1rem;
 	}
 
 	.info__div__1, .info__div__2 {
@@ -130,6 +157,15 @@ section {
 	.crew__wrapper {
 		grid-template-columns: 1fr;
 	}
+
+  .opening__head {
+    font-size: 1rem;
+    margin-right: 100px;
+  }
+
+  .table {
+    margin-right: 100px;
+  }
 
 
 }

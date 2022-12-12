@@ -42,7 +42,7 @@
                 <thead>
                     <tr>
                       <th></th>
-                      <th><h1 class="join__head"  data-aos="fade" >Recent Openings</h1></th>
+                      <th><h1 class="opening__head"  data-aos="fade" >Recent Openings</h1></th>
                       <th></th>
                       <th></th>
                     </tr>
@@ -50,7 +50,7 @@
                 <tbody>
                   {% for i in jobs %}
                   <tr>
-                      <td><strong>{{ i.title }}</strong></td>
+                      <td class="job__title" data-aos="fade">{{ i.title }}</td>
                       <td></td>
                       <td></td>
                       <td><a href="/job_detail/{{i.id}}/"><button class="button-81" role="button">Apply Now</button></a></td>

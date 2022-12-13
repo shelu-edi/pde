@@ -50,10 +50,11 @@
 	animation: fadeIn 2s;
 	border-radius: 10px;
 	border: 1px solid rgba(83,82,108,1);
+	background: rgba(0, 0, 0, .5);
+	color: #fff;
 }
 
-.form__div input {
-	background: rgba(0, 0, 0, .5);
+.form__div input {	
 	color: #fff;
 }
 

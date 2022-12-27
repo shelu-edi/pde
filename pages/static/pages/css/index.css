@@ -30,7 +30,7 @@
 	animation: fadeIn 2s;
 	color: #fff;
 	z-index: 100;
-	background: rgba(0, 0, 0, .5);	
+	/* background: rgba(0, 0, 0, .5); */	
 	width: 100vw;
 }
 
@@ -219,6 +219,7 @@
 	align-self: center;
 	/*height: 25vh;*/
 	width: 530px;
+	height: 300px;
 	object-fit: cover;
 	padding: 0 50px 10px 0;
 	border-radius: 10px;
@@ -296,7 +297,7 @@
 	font-size: 3rem;
 	animation: fadeIn 5s;
 	padding: 20px 0 20px 100px;
-	color: #21D4FD;
+	color: #fff;
 	font-weight: 400;
 	z-index: 100;
 }
@@ -314,7 +315,7 @@
 	margin: 5vw 0 0 3vw;
 	font-size: 4rem;
 	width: 45vw;
-	color: #21D4FD;
+	color: #fff;
 	z-index: 100;
 }
 

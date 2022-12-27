@@ -94,7 +94,7 @@
 
 .navbar__btn:hover {
     text-decoration: none;
-    color: #fff;
+    color: #FF00FF;
     box-shadow: 8px 3px 8px #66aec7;
     transition: 0.2s ease-in;
 }

@@ -12,22 +12,31 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 import os
-# import django_heroku
+
+from .local_settings import (
+    SECRET_KEY, DEBUG, ALLOWED_HOSTS, DB_CONFIG,
+    TEMPLATES_DIR, STATICFILES_DIR, STATIC_DIR, MEDIA_DIR, LOGS_DIR
+)
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
+SETTINGS_DIR = os.path.dirname(os.path.abspath(__file__))
+BASE_DIR = os.path.dirname(SETTINGS_DIR)
+TEMPLATES_DIR = os.getenv('TEMPLATES_DIR', TEMPLATES_DIR)
+STATICFILES_DIR = os.getenv('STATICFILES_DIR', STATICFILES_DIR)
+STATIC_DIR = os.getenv('STATIC_DIR', STATIC_DIR)
+MEDIA_DIR = os.getenv('MEDIA_DIR', MEDIA_DIR)
+LOGS_DIR = os.getenv('LOGS_DIR', LOGS_DIR)
 
 
 # Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
+# See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-w*j8k*s3d)-mpr(&8gt%0_bp)tri2j$!c4ic50=-*b17(!9n$&'
-
+SECRET_KEY = SECRET_KEY
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = DEBUG
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ALLOWED_HOSTS
 
 
 # Application definition
@@ -66,7 +75,7 @@ ROOT_URLCONF = 'elaris.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [TEMPLATES_DIR, ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -86,10 +95,7 @@ WSGI_APPLICATION = 'elaris.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+    'default': os.getenv('DB_CONFIG', DB_CONFIG)
 }
 
 
@@ -130,17 +136,16 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = STATIC_DIR  # production, don't forget to run collectstatic
+STATICFILES_DIRS = [STATICFILES_DIR, ]  # development environment
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = MEDIA_DIR
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-STATIC_ROOT = BASE_DIR / "static"
-STATIC_URL = '/static/'
-
-MEDIA_ROOT = os.path.join(BASE_DIR, 'img')
-MEDIA_URL = '/img/'
 
 # EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'

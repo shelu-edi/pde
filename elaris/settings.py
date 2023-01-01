@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 import os
-import django_heroku
+# import django_heroku
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -27,11 +27,7 @@ SECRET_KEY = 'django-insecure-w*j8k*s3d)-mpr(&8gt%0_bp)tri2j$!c4ic50=-*b17(!9n$&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-# ALLOWED_HOSTS = ['127.0.0.1', 'elaris.onrender.com']
-# ALLOWED_HOSTS = ['https://pdelaris.herokuapp.com/']
 ALLOWED_HOSTS = ['*']
-
-
 
 
 # Application definition
@@ -55,7 +51,7 @@ INSTALLED_APPS = [
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 MIDDLEWARE = [
-    'whitenoise.middleware.WhiteNoiseMiddleware',
+    # 'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -155,4 +151,4 @@ EMAIL_HOST_USER = 'contact@pdelaris.com'
 EMAIL_HOST_PASSWORD = 'Nuwangi1!'
 
 # Activate Django-Heroku.
-django_heroku.settings(locals())
+# django_heroku.settings(locals())

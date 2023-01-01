@@ -1,13 +1,13 @@
 [Unit]
-Description=django_boilerplate-uWSGI-instance
-After=network.target postgresql-11.service
+Description=pde-uWSGI-instance
+After=network.target postgresql-13.service
 
 [Service]
 User=centos
 Group=nginx
-WorkingDirectory=/opt/django_boilerplate
-Environment="PATH=/opt/django_boilerplate/venv/bin"
-ExecStart=/opt/django_boilerplate/venv/bin/uwsgi --ini /opt/django_boilerplate/uwsgi/uwsgi.ini
+WorkingDirectory=/opt/pde
+Environment="PATH=/opt/pde/venv/bin"
+ExecStart=/opt/pde/venv/bin/uwsgi --ini /opt/pde/uwsgi/uwsgi.ini
 Restart=always
 KillSignal=SIGQUIT
 Type=notify

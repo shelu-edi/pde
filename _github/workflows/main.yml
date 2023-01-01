@@ -6,14 +6,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    # Remove this step if you're not using Jekyll or modify it
-    # if you're building your files with a different system
-    - name: Build Jekyll Files
-      run: |
-        docker run \
-        -v $:/srv/jekyll -v $/_site:/srv/jekyll/_site \
-        jekyll/builder:latest /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --future --trace"
-
     - name: Configure AWS Credentials
       uses: aws-actions/configure-aws-credentials@v1
       with:

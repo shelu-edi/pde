@@ -136,8 +136,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = STATIC_DIR  # production, don't forget to run collectstatic
-STATICFILES_DIRS = [STATICFILES_DIR, ]  # development environment
+STATIC_ROOT = Path(__file__).resolve().parent.parent / "static"
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = MEDIA_DIR

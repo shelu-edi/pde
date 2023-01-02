@@ -19,13 +19,7 @@ from .local_settings import (
 )
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-SETTINGS_DIR = os.path.dirname(os.path.abspath(__file__))
-BASE_DIR = os.path.dirname(SETTINGS_DIR)
-TEMPLATES_DIR = os.getenv('TEMPLATES_DIR', TEMPLATES_DIR)
-STATICFILES_DIR = os.getenv('STATICFILES_DIR', STATICFILES_DIR)
-STATIC_DIR = os.getenv('STATIC_DIR', STATIC_DIR)
-MEDIA_DIR = os.getenv('MEDIA_DIR', MEDIA_DIR)
-LOGS_DIR = os.getenv('LOGS_DIR', LOGS_DIR)
+BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 # Quick-start development settings - unsuitable for production
@@ -75,7 +69,7 @@ ROOT_URLCONF = 'elaris.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [TEMPLATES_DIR, ],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -136,10 +130,17 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = Path(__file__).resolve().parent.parent / "static"
 
-MEDIA_URL = '/media/'
-MEDIA_ROOT = MEDIA_DIR
+# Default primary key field type
+# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
+
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+STATIC_ROOT = BASE_DIR / "static"
+STATIC_URL = '/static/'
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'img')
+MEDIA_URL = '/img/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
